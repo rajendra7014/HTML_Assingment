@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+		a 
+		{
+			height: 50px;
+			width: 50px;
+			background-color: transparent;
+
+			display: block;
+			text-align: center;
+			line-height: 50px;
+
+			transition: 1s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		.front
+		{
+			height: 50px;
+			width: 50px;
+			border:2px solid;
+			background-color: lightblue;
+			position: absolute;
+			top:0;
+			left: 0;
+			backface-visibility: hidden;
+			transform: translateZ(25px);
+		}
+
+		.back
+		{
+			height: 50px;
+			width: 50px;
+			border:2px solid;
+			background-color: lightcoral;
+			position: absolute;
+			top:0;
+			left: 0;
+			backface-visibility: hidden;
+			transform: rotateX(90deg) translateZ(25px);
+		}
+
+		a:hover
+		{
+			transform: rotateX(-90deg) translateZ(25px);
+		}
+	</style>
+</head>
+<body>
+
+
+<a href="">
+	<div class="front">
+		<i class="fa-brands fa-facebook-f"></i>
+	</div>
+
+	<div class="back">
+		<i class="fa-brands fa-facebook-f"></i>
+	</div>
+</a>
+
+</body>
+</html>

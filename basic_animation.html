@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div
+		{
+			height: 200px;
+			width: 200px;
+			background: black;
+			margin: 150px auto;
+			/*animation-name: anyname;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;*/
+			animation: anyname 2s infinite;
+		}
+		@keyframes anyname
+		{
+			/*from{background: black;}
+			to{background: blue}*/
+			0%{background: black;}
+			20%{background: blue;transform: translateX(200px);}
+			40%{background: gray;}
+			60%{background: lightblue;transform: translateY(200px);}
+			80%{background: linear-gradient(coral,lightblue);}
+			100%{background: lightblue;}
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div></div>
+
+</body>
+</html>
